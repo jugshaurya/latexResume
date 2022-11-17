@@ -1,0 +1,252 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto the second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point in the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Shaurya}{Singhal}{ \urlstyle{same}\href{https://jugshaurya.in}{jugshaurya.in} | 
++91 9560399578 | \href{mailto:shauryasinghal84@gmail.com}{shauryasinghal84@gmail.com} \\
+\href{https://github.com/jugshaurya}{https://github.com/jugshaurya} |
+\href{https://leetcode.com/jugshaurya/}{https://leetcode.com/jugshaurya/}\\
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Delhi}
+\descript{Master of Computer Application(MCA)}
+ \\
+\location{Jun 2020 - Present | Delhi}
+\location{ Cum. GPA: 8.46 / 10.0}
+\sectionsep
+
+\subsection{University of Delhi}
+\descript{Shaheed Sukhdev College of Business Studies}
+B.Sc. (Hons.) Computer Science \\
+\location{Jun 2016 - 2019 | Delhi}
+\location{ Cum. GPA: 8.55 / 10.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Portfolio://  \href{https://www.jugshaurya.in/}{\bf jugshaurya} \\
+GitHub:// \href{https://github.com/jugshaurya}{\bf jugshaurya} \\
+LinkedIn://  \href{https://www.linkedin.com/in/jugshaurya/}{\bf jugshaurya} \\
+Leetcode:// \href{https://leetcode.com/jugshaurya/}{\bf jugshaurya} \\
+Codechef://  \href{https://www.codechef.com/users/jugshaurya}{\bf @jugshaurya} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+Data Structures \& Algorithms \\
+Database Management Systems \\
+Operating Systems \\
+Computer Networks \\
+Discrete Structures \\
+Graph Theory \\
+Object Oriented Programming \\
+Functional Programming \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Experienced:}
+C++ \textbullet{}  JavaScript \textbullet{} Python \\
+\textbullet{} Git \textbullet{} GitHub \textbullet{} Nodejs + Express \\
+\location{Intermediate:}
+React \textbullet{} HTML \textbullet{} MongoDB \textbullet{} Gatsby \\
+\location{Familiar:}
+Figma \textbullet{} GraphQL \textbullet{} React + Redux \textbullet{} styled-components
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Certificates
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certificates}
+- {\href{https://confirm.udacity.com/QQN2KHS5}{\textbf{React | Udacity Nanodegree Graduate}}} \\
+- {\href{https://www.udemy.com/certificate/UC-326dd37c-8430-430b-bc71-7f997a94f223/}{\textbf{Graph Theory Algorithms} by Coding Minutes (2022)}}\\
+- {\href{https://www.udemy.com/certificate/UC-15592f94-8fe1-4638-a08e-ffa284e7ec16/}{\textbf{Dynamic Programming} Algorithms Master Course (2022)}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%z%%%%%%%%%%%%%%%%
+%     Open Source
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Open Source}
+\runsubsection{React Native Elements}
+\descript {| \href{https://github.com/react-native-elements/playground/commits?author=jugshaurya}{Contributor}}
+\location{Jan 2021 – Jul 2021 }
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Integrated \textbf{{Loading Component}} in Fallbacks + \textbf{Linting and prettier} Functionality.
+\item \textbf{{Fixed 5+ Bugs}}, Improved Codebase to become \textbf{{50\% more maintainable, and new contributors friendly}}. Implemented 3+ Component's Playgrounds.
+\item \textbf{{10 Merged Pull Requests}} so far.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Coding Blocks}
+\descript{| \href{https://github.com/coding-blocks/gondor/commits?author=jugshaurya}{Contributor}}
+\location{May 2020 – Jul 2020}
+\begin{tightemize}
+\item \textbf{\href{https://boss.codingblocks.com/leaderboard/2020}{Ranked 6\textsuperscript{th} with 12 Merged Pull Requests under BOSS 2020.}}
+\item Improved User Interface, \textbf{{Fixed 5+ Bugs}}, Added Error-Layout Component.
+\item Implemented \textbf{{User Impersonation}} option for Admins.
+\item \textbf{{Serialized paths to work on Windows}} with Linux to get 90\% systems coverage.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Coding Ninjas}
+\descript{| Teaching Assistant, Data Structures and Algorithms in Python}
+\location{Jan 2019 – Sep 2019}
+\begin{tightemize}
+\item \textbf{{Solved 1500+ Doubts}}, took 1-On-1 doubt sessions over chat/video calls.
+\item \textbf{{Debugged students' Code}} for 2000+ Errors/Bugs.
+\item \textbf{\href{https://ninjasfiles.s3.amazonaws.com/certificate1029dfe85af75e0c254af0f313a19ec6f82d.pdf}{Certificate 1}} + \textbf{\href{https://ninjasfiles.s3.amazonaws.com/certificate1030f2c42e7de4802f70ad75bb78562d91be.pdf}{Certificate 2}}
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+\runsubsection{Merge Videos |}
+\location{Nodejs Script | \href{https://github.com/jugshaurya/merge-videos}{GitHub}}
+\begin{tightemize}
+\item \textbf{{Merge video files inside a directory into a single big video}} file with 90\% success Rate.
+\item \textbf{{Utilized Depth-First Search to retrieve the path list in Order}}.
+\item Saved more than 50\% of time wasted in playing videos one by one.\\
+\textbf{Tech Stack: Nodejs}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Productive Weekday |}
+\location{\href{https://productive-weekday.netlify.app/}{Website} | \href{https://github.com/jugshaurya/productive-weekday}{GitHub}}
+\begin{tightemize}
+\item Preprocess the 7-day-wise contributions from GitHub \& animate the data in a race bar graph. \\
+\item \textbf{\href{https://github.com/jugshaurya/productive-weekday/blob/master/visuald3server/api/getUserContribDataset.js#L43}{Automated data scraping from GitHub}} to send data back to the front end.
+\textbf{Tech Stack: Nodejs + Express, React + Redux, d3.js, cheerio.js}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Notes |}
+\location{\href{https://notes.jugshaurya.in/}{Website} | \href{https://github.com/jugshaurya/notes}{GitHub}}
+\begin{tightemize}
+\item \textbf{{Giving back to the community by compiling my learning over the 6+ years}}, beneficial for quick
+revision and Interview preparation.\\
+\textbf{Tech Stack: Docusaurus, MDX, React}
+
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Achievements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements} 
+\begin{tabular}{rll}
+2022	    & \textbf{{Ranked 655\textsuperscript{th}}}  & Round H Google Kick Start\\
+2022	    & Ranked 2942\textsuperscript{th}  & Round D Google Kick Start\\
+2021        & \textbf{AIR 2547}(top 3\%) & Graduate Aptitude Test in Engineering (GATE) \\
+2020        & \textbf{AIR 13} & Graduate Aptitude Test in Engineering (GATE) \\
+\end{tabular}
+\sectionsep
+
+\end{minipage}
+\end{document}
